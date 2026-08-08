@@ -29,6 +29,29 @@
     "edges": 106082,
     "namedNodes": 1050
    }
+  },
+  {
+   "key": "tokyo",
+   "label": "東京23区・武三交通圏（特別区・武三地区）",
+   "bbox": [
+    35.482,
+    139.524,
+    35.817,
+    139.919
+   ],
+   "prefs": [
+    "13"
+   ],
+   "dataMonth": "2026-08",
+   "file": "tokyo/road_graph.sqlite.gz",
+   "bytes": 43028926,
+   "bytesRaw": 127668224,
+   "sha256": "dd765f4fca87758e25a6bd5b35fa0495c7540915b736ed12b36dd469b7391ccc",
+   "counts": {
+    "nodes": 430948,
+    "edges": 583686,
+    "namedNodes": 7356
+   }
   }
  ]
 }
