@@ -1,0 +1,34 @@
+{
+ "generated": "2026-08-08T11:59:14Z",
+ "dataMonth": "2026-08",
+ "schema": 1,
+ "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
+ "source": "OpenStreetMap contributors（Overpass API 経由で取得し加工）",
+ "attribution": "© OpenStreetMap contributors（ODbL）。当アプリで加工して作成。",
+ "note": "端末は営業圏に対応する1件だけ落とす。取れなくてもアプリは同梱データで動く。",
+ "areas": [
+  {
+   "key": "fukuoka",
+   "label": "福岡交通圏（福岡市域地区）",
+   "bbox": [
+    33.488,
+    130.206,
+    33.734,
+    130.516
+   ],
+   "prefs": [
+    "40"
+   ],
+   "dataMonth": "2026-08",
+   "file": "fukuoka/road_graph.sqlite.gz",
+   "bytes": 8098107,
+   "bytesRaw": 23805952,
+   "sha256": "0753fa85df179364913d446aa42872727a7ec2d7382d95d8bf8396592c63f4e9",
+   "counts": {
+    "nodes": 75124,
+    "edges": 106082,
+    "namedNodes": 1050
+   }
+  }
+ ]
+}
