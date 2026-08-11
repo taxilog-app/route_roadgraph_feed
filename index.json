@@ -5,7 +5,7 @@
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
  "source": "OpenStreetMap contributors（Overpass API 経由で取得し加工）",
  "attribution": "© OpenStreetMap contributors（ODbL）。当アプリで加工して作成。",
- "note": "端末は営業圏に対応する1件だけ落とす。取れなくてもアプリは同梱データで動く。 🔴 sha256は**展開後**の指紋（アプリは展開してから照合する）。圧縮のままの指紋を書くと永久に弾かれる（2026-08-09 修正）。",
+ "note": "端末は営業圏に対応する1件だけ落とす。取れなくてもアプリは同梱データで動く。 🔴 sha256は**圧縮したまま（.gzの袋そのもの）**の指紋。アプリは東京の展開後122MBをメモリに広げないため、袋のまま指紋を照合してからファイルへ流しながら展開する（lib/services/sqlite_feed_updater.dart は decompress:false で受け取る）。⚠️ **交通規制フィードとは流儀が逆**（あちらは展開後の指紋）。同じ会社の目次だからと揃えないこと。2026-08-09 に揃えてしまい、福岡も東京も端末に入らない状態が続いた。🔴 直したら必ず tools/verify_index.py を通してから公開する。",
  "areas": [
   {
    "key": "fukuoka",
@@ -23,7 +23,7 @@
    "file": "fukuoka/road_graph.sqlite.gz",
    "bytes": 8098107,
    "bytesRaw": 23805952,
-   "sha256": "240b325dd32aa272c707422bf695a979d9e89dfcc0462be9d0c1b88b7d52ea0b",
+   "sha256": "0753fa85df179364913d446aa42872727a7ec2d7382d95d8bf8396592c63f4e9",
    "counts": {
     "nodes": 75124,
     "edges": 106082,
@@ -46,7 +46,7 @@
    "file": "tokyo/road_graph.sqlite.gz",
    "bytes": 43028926,
    "bytesRaw": 127668224,
-   "sha256": "f0f5b734ab20fd484dee87048d0d7cbaccde6e1ca6d666701600528a1d7a2db3",
+   "sha256": "dd765f4fca87758e25a6bd5b35fa0495c7540915b736ed12b36dd469b7391ccc",
    "counts": {
     "nodes": 430948,
     "edges": 583686,
