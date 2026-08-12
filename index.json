@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-12T13:50:38Z",
+ "generated": "2026-08-12T14:28:02Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -74,6 +74,29 @@
     "nodes": 310658,
     "edges": 415191,
     "namedNodes": 4050
+   }
+  },
+  {
+   "key": "nagoya",
+   "label": "名古屋交通圏（愛知）",
+   "bbox": [
+    35.01,
+    136.67,
+    35.31,
+    137.19
+   ],
+   "prefs": [
+    "23"
+   ],
+   "dataMonth": "2026-08",
+   "file": "nagoya/road_graph.sqlite.gz",
+   "bytes": 32816952,
+   "bytesRaw": 99266560,
+   "sha256": "fb0df9b6c47cb73a2847ade2015874aab10e840ab10d3ca87eca22725c153685",
+   "counts": {
+    "nodes": 361406,
+    "edges": 501274,
+    "namedNodes": 3949
    }
   }
  ]
