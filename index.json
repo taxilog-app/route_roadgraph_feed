@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-08T11:59:14Z",
+ "generated": "2026-08-12T13:50:38Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -51,6 +51,29 @@
     "nodes": 430948,
     "edges": 583686,
     "namedNodes": 7356
+   }
+  },
+  {
+   "key": "osaka",
+   "label": "大阪市域交通圏（大阪地区）",
+   "bbox": [
+    34.54,
+    135.36,
+    34.84,
+    135.69
+   ],
+   "prefs": [
+    "27"
+   ],
+   "dataMonth": "2026-08",
+   "file": "osaka/road_graph.sqlite.gz",
+   "bytes": 27880545,
+   "bytesRaw": 83566592,
+   "sha256": "c5fe442ccbefc86ff19cc85d501a7af9f468b86d119e6083219a9de8d2996cfa",
+   "counts": {
+    "nodes": 310658,
+    "edges": 415191,
+    "namedNodes": 4050
    }
   }
  ]
