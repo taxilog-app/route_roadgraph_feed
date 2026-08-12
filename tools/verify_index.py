@@ -19,6 +19,10 @@
      ＝運転手に見せる「受け取りますか？」の数字が嘘にならないように
   ③ ファイルが実在し、gzipとして展開でき、中身がSQLiteであること
   ④ 目次のschemaが、アプリが受け入れる版と一致しているか（人が目視する用に表示）
+  ⑤ 中身が本当に入っているか（nodes/edges/edge_cell が0件でない・目次の件数と合う）
+     🔴 2026-08-12 追加。生成道具から db.commit() が消え、**表はあるが1行も無い**
+        69MBのファイルが出来た。SQLiteとしては正常・大きさも普通なので①〜④は
+        全部すり抜ける。『それらしい物が出来ている』を根拠にしない。
 
 使い方:
     python3 tools/verify_index.py          # 手元のファイルで検査
@@ -28,6 +32,8 @@
 """
 import argparse
 import gzip
+import sqlite3
+import tempfile
 import hashlib
 import json
 import os
@@ -41,6 +47,38 @@ BASE_URL = "https://taxilog-app.github.io/route_roadgraph_feed"
 # アプリ側の受け取り方（lib/services/sqlite_feed_updater.dart）。
 # ここが変わったらこの道具も直すこと。
 HASH_TARGET = "gz"  # "gz"=袋のまま / "raw"=展開後
+
+
+def counts_ng(exp, want):
+    """展開したSQLiteの中身が空でないか・目次の件数と合うかを見る。
+
+    おかしければ理由の文字列、問題なければ None を返す。
+    端末側 road_graph_feed_updater.dart の sanityCheck と同じ3表を見る。"""
+    tmp = os.path.join(tempfile.gettempdir(), "verify_road_graph.sqlite")
+    try:
+        with open(tmp, "wb") as f:
+            f.write(exp)
+        con = sqlite3.connect(tmp)
+        have = {r[0] for r in con.execute(
+            "SELECT name FROM sqlite_master WHERE type='table'")}
+        need = {"nodes", "edges", "edge_cell"}
+        if not need <= have:
+            return f"必要な表が無い（足りないもの: {sorted(need - have)}）"
+        got = {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
+               for t in sorted(need)}
+        con.close()
+        empty = [t for t, v in got.items() if v == 0]
+        if empty:
+            return (f"表はあるが**中身が空**（0件: {', '.join(empty)}）。"
+                    f"生成道具の db.commit() 抜けを疑うこと")
+        for k, t in (("nodes", "nodes"), ("edges", "edges")):
+            w = (want or {}).get(k)
+            if w is not None and w != got[t]:
+                return f"件数が目次と違う（{k}: 目次 {w:,} / 実物 {got[t]:,}）"
+        return None
+    finally:
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
 
 def fetch(path, remote):
@@ -103,8 +141,21 @@ def main():
                   f"      目次 bytes={a.get('bytes')} bytesRaw={a.get('bytesRaw')}\n"
                   f"      実物 bytes={len(raw)} bytesRaw={len(exp)}")
         else:
+            # ⑤ 中身が本当に入っているか（表があるだけの空っぽを弾く）
+            #    🔴 2026-08-12：生成道具から db.commit() が消えていて、**表はあるが
+            #       1行も入っていない**69MBのファイルが出来た。SQLiteとしては正常で、
+            #       大きさも普通なので、ここまでの検査は全部すり抜ける。
+            #       端末側は空を弾くので入りはしないが、**気づく手がかりが無いまま
+            #       「配信したのに誰にも届かない」**状態になる。数を見るまで信用しない。
+            bad = counts_ng(exp, a.get("counts"))
+            if bad:
+                ng += 1
+                print(f"  ❌ {key}: {bad}")
+                continue
+            cn = a.get("counts") or {}
             print(f"  ✅ {key}: 指紋・大きさとも一致 "
-                  f"（配布 {len(raw)/1024/1024:.1f}MB → 展開後 {len(exp)/1024/1024:.1f}MB）")
+                  f"（配布 {len(raw)/1024/1024:.1f}MB → 展開後 {len(exp)/1024/1024:.1f}MB"
+                  f"・交差点 {cn.get('nodes', '?'):,} / 区間 {cn.get('edges', '?'):,}）")
 
     if ng:
         print(f"\n🔴 {ng}件がおかしい。**公開しないこと。**")
