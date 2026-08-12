@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-12T15:49:55Z",
+ "generated": "2026-08-12T16:32:56Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -145,6 +145,75 @@
     "namedNodes": 64
    },
    "note": "🔴 交差点名はOSM側に66件しか登録が無いため64件のみ（他営業圏は数千件）。道路スナップ・磁石・規制の向き判定は正常に働く。札幌は住所が碁盤の目式で、交差点に固有名がつく文化が薄いことが原因。"
+  },
+  {
+   "key": "hiroshima",
+   "label": "広島市域交通圏",
+   "bbox": [
+    34.23,
+    132.03,
+    34.62,
+    132.7
+   ],
+   "prefs": [
+    "34"
+   ],
+   "dataMonth": "2026-08",
+   "file": "hiroshima/road_graph.sqlite.gz",
+   "bytes": 10301704,
+   "bytesRaw": 30625792,
+   "sha256": "e84df79ddcaec50d4c091f74a47e140b0d8230213f39ba9483c50a2e97b655a1",
+   "counts": {
+    "nodes": 88757,
+    "edges": 117953,
+    "namedNodes": 2621
+   }
+  },
+  {
+   "key": "kobe",
+   "label": "神戸市域交通圏",
+   "bbox": [
+    34.62,
+    134.86,
+    35.03,
+    135.47
+   ],
+   "prefs": [
+    "28"
+   ],
+   "dataMonth": "2026-08",
+   "file": "kobe/road_graph.sqlite.gz",
+   "bytes": 22590333,
+   "bytesRaw": 67981312,
+   "sha256": "925e52c9fccf09cd885806a829214548e0ce9b95ef9efec29205789f1706cdb4",
+   "counts": {
+    "nodes": 224187,
+    "edges": 304854,
+    "namedNodes": 2671
+   }
+  },
+  {
+   "key": "kyoto",
+   "label": "京都市域交通圏",
+   "bbox": [
+    34.7,
+    135.55,
+    35.33,
+    136.06
+   ],
+   "prefs": [
+    "26"
+   ],
+   "dataMonth": "2026-08",
+   "file": "kyoto/road_graph.sqlite.gz",
+   "bytes": 27578998,
+   "bytesRaw": 82341888,
+   "sha256": "596f4bb7ce6436488b5589db2a175a5d1734c99c14f57c4f9e4975971044debd",
+   "counts": {
+    "nodes": 288880,
+    "edges": 378499,
+    "namedNodes": 2403
+   }
   }
  ]
 }
