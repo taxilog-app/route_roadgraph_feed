@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-12T14:28:02Z",
+ "generated": "2026-08-12T14:42:04Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -97,6 +97,29 @@
     "nodes": 361406,
     "edges": 501274,
     "namedNodes": 3949
+   }
+  },
+  {
+   "key": "keihin",
+   "label": "京浜交通圏（横浜・川崎・横須賀・三浦）",
+   "bbox": [
+    35.12,
+    139.44,
+    35.65,
+    139.8
+   ],
+   "prefs": [
+    "14"
+   ],
+   "dataMonth": "2026-08",
+   "file": "keihin/road_graph.sqlite.gz",
+   "bytes": 32207024,
+   "bytesRaw": 94322688,
+   "sha256": "5c90d65bb2cb2a514d424b2bfe4e9754005f7d12833905fdd8c2e35d222bfac1",
+   "counts": {
+    "nodes": 341709,
+    "edges": 448237,
+    "namedNodes": 5755
    }
   }
  ]
