@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13T14:12:48Z",
+ "generated": "2026-08-13T14:51:42Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -239,6 +239,146 @@
     "namedNodes": 466
    },
    "note": "🔴 交差点名は466件（他の政令市より少ない）。OSM側にこの範囲の名前つき信号が469件しか登録されておらず、道具は99.4%拾えている＝取りこぼしではない。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "kitakyushu",
+   "label": "北九州市域地区（九州）",
+   "bbox": [
+    33.72,
+    130.54,
+    34.03,
+    131.04
+   ],
+   "prefs": [
+    "40"
+   ],
+   "dataMonth": "2026-08",
+   "file": "kitakyushu/road_graph.sqlite.gz",
+   "bytes": 9911156,
+   "bytesRaw": 29106176,
+   "sha256": "bca312aada5fe0a1281a15a867acf6449bd435eccfa7fb79d820be12fe23d32b",
+   "counts": {
+    "nodes": 94482,
+    "edges": 130575,
+    "namedNodes": 498
+   }
+  },
+  {
+   "key": "tama",
+   "label": "多摩地区（関東）",
+   "bbox": [
+    35.5,
+    138.94,
+    35.9,
+    139.6
+   ],
+   "prefs": [
+    "13"
+   ],
+   "dataMonth": "2026-08",
+   "file": "tama/road_graph.sqlite.gz",
+   "bytes": 36729344,
+   "bytesRaw": 108511232,
+   "sha256": "2f69bda76e27577ae4ffb7323a37634eff8f4d9101367ce1c2e1ce8a25fe70f8",
+   "counts": {
+    "nodes": 390331,
+    "edges": 506330,
+    "namedNodes": 5242
+   }
+  },
+  {
+   "key": "sagami",
+   "label": "相模・鎌倉地区（関東）",
+   "bbox": [
+    35.25,
+    139.06,
+    35.68,
+    139.65
+   ],
+   "prefs": [
+    "14"
+   ],
+   "dataMonth": "2026-08",
+   "file": "sagami/road_graph.sqlite.gz",
+   "bytes": 43222632,
+   "bytesRaw": 127094784,
+   "sha256": "1da6076a44ac730434b4154b4e69c84f91fd7678999c8973a05e755ea1b217a4",
+   "counts": {
+    "nodes": 456463,
+    "edges": 591967,
+    "namedNodes": 6854
+   }
+  },
+  {
+   "key": "saitama",
+   "label": "埼玉南部地区（関東）",
+   "bbox": [
+    35.75,
+    139.1,
+    36.22,
+    139.91
+   ],
+   "prefs": [
+    "11"
+   ],
+   "dataMonth": "2026-08",
+   "file": "saitama/road_graph.sqlite.gz",
+   "bytes": 56033953,
+   "bytesRaw": 168415232,
+   "sha256": "7d0cce0833d3e7efbc1eaf84ff553a120f9b516c80c44f06f9076dc5e310ccf4",
+   "counts": {
+    "nodes": 594354,
+    "edges": 799422,
+    "namedNodes": 5518
+   }
+  },
+  {
+   "key": "okinawa_main",
+   "label": "沖縄県本島地区（沖縄）",
+   "bbox": [
+    26.07,
+    127.63,
+    26.88,
+    128.33
+   ],
+   "prefs": [
+    "47"
+   ],
+   "dataMonth": "2026-08",
+   "file": "okinawa_main/road_graph.sqlite.gz",
+   "bytes": 10646365,
+   "bytesRaw": 31150080,
+   "sha256": "96f31cd6165a1e738e21ac9d9b51957e1b1b4ad3404abea640a9c04720e2fd18",
+   "counts": {
+    "nodes": 97865,
+    "edges": 131059,
+    "namedNodes": 51
+   },
+   "note": "🔴 交差点名は51件のみ。OSM側にこの範囲の名前つき信号が58件しか登録されておらず、道具は88%拾えている＝取りこぼしではない（札幌と同じ事情）。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "chiba",
+   "label": "千葉地区（関東）",
+   "bbox": [
+    34.89,
+    139.75,
+    36.11,
+    140.88
+   ],
+   "prefs": [
+    "12"
+   ],
+   "dataMonth": "2026-08",
+   "file": "chiba/road_graph.sqlite.gz",
+   "bytes": 68784996,
+   "bytesRaw": 204300288,
+   "sha256": "a46ab978232f86a9bbfb562b43d316962c0cb251bbb71b95f9011b75a77fb1b5",
+   "counts": {
+    "nodes": 695292,
+    "edges": 931905,
+    "namedNodes": 5546
+   },
+   "note": "⚠️ 現在いちばん大きい営業圏（配布65.6MB）。四角で切ると東京23区がまるごと入るため。アプリの受け取り上限96MB・GitHubの1ファイル上限100MBの内側。"
   }
  ]
 }
