@@ -49,6 +49,63 @@ BASE_URL = "https://taxilog-app.github.io/route_roadgraph_feed"
 HASH_TARGET = "gz"  # "gz"=袋のまま / "raw"=展開後
 
 
+# 目次のキー → 丁目境界の置き場の名前（**違う組だけ**書く）。
+# アプリ側 lib/repositories/prefs_repository.dart の _feedAreaAlias の逆。
+_KEY_TO_BOUNDARY = {
+    "tokyo": "tokyo23",
+    "kyoto": "kyoto_city",
+    "saitama": "saitama_s",
+}
+_BOUNDARY_ROOT = os.path.expanduser("~/Developer/taxi関連/route_boundary_feed")
+
+
+def _boundary_center(key):
+    """その営業圏の実際の真ん中（緯度, 経度）。分からなければ None。"""
+    d = _KEY_TO_BOUNDARY.get(key, key)
+    path = os.path.join(_BOUNDARY_ROOT, d, "ward_frame.geojson")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as f:
+            gj = json.load(f)
+    except Exception:                                # noqa: BLE001
+        return None
+    la0 = lo0 = 1e9
+    la1 = lo1 = -1e9
+    for ft in gj.get("features", []):
+        b = ft.get("properties", {}).get("b")        # [minLng,minLat,maxLng,maxLat]
+        if not b:
+            continue
+        lo0, la0 = min(lo0, b[0]), min(la0, b[1])
+        lo1, la1 = max(lo1, b[2]), max(la1, b[3])
+    if la0 > la1:
+        return None
+    return ((la0 + la1) / 2, (lo0 + lo1) / 2)
+
+
+def place_ng(key, bbox):
+    """🔴 **キーは合っているが、中身が別の土地**を弾く（2026-08-13 追加）。
+
+    実際にやらかした：広島市域の道路グラフを 'hiroshima' で公開した。
+    ところが営業圏キーの正典ではその名前は**広島地区（呉・尾道・福山）**を指す。
+    結果、その営業圏の運転手には範囲がまるごと違うデータが配られ、
+    肝心の広島市域には何も届かない状態になった。
+    指紋も大きさも件数も全部正しいので、ここまでの検査は全部すり抜ける。
+
+    見方＝その営業圏の実際の真ん中が、目次の bbox の中に入っているか。
+    （営業圏全体を覆えとは言わない。大阪のように「府の一部だけ配る」のは正しい）
+    """
+    c = _boundary_center(key)
+    if c is None or not bbox or len(bbox) != 4:
+        return None                                  # 照合できない＝黙って通す
+    la, lo = c
+    if bbox[0] <= la <= bbox[2] and bbox[1] <= lo <= bbox[3]:
+        return None
+    return (f"配っている場所が営業圏と違う（この営業圏の中心 "
+            f"{la:.3f},{lo:.3f} が bbox {bbox} の外）。"
+            f"キーの取り違えを疑うこと")
+
+
 def counts_ng(exp, want):
     """展開したSQLiteの中身が空でないか・目次の件数と合うかを見る。
 
@@ -147,7 +204,7 @@ def main():
             #       大きさも普通なので、ここまでの検査は全部すり抜ける。
             #       端末側は空を弾くので入りはしないが、**気づく手がかりが無いまま
             #       「配信したのに誰にも届かない」**状態になる。数を見るまで信用しない。
-            bad = counts_ng(exp, a.get("counts"))
+            bad = counts_ng(exp, a.get("counts")) or place_ng(key, a.get("bbox"))
             if bad:
                 ng += 1
                 print(f"  ❌ {key}: {bad}")

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-12T16:32:56Z",
+ "generated": "2026-08-13T04:02:47Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -147,8 +147,8 @@
    "note": "🔴 交差点名はOSM側に66件しか登録が無いため64件のみ（他営業圏は数千件）。道路スナップ・磁石・規制の向き判定は正常に働く。札幌は住所が碁盤の目式で、交差点に固有名がつく文化が薄いことが原因。"
   },
   {
-   "key": "hiroshima",
-   "label": "広島市域交通圏",
+   "key": "hiroshima_city",
+   "label": "広島市域交通圏（広島市域地区）",
    "bbox": [
     34.23,
     132.03,
@@ -159,7 +159,7 @@
     "34"
    ],
    "dataMonth": "2026-08",
-   "file": "hiroshima/road_graph.sqlite.gz",
+   "file": "hiroshima_city/road_graph.sqlite.gz",
    "bytes": 10301704,
    "bytesRaw": 30625792,
    "sha256": "e84df79ddcaec50d4c091f74a47e140b0d8230213f39ba9483c50a2e97b655a1",
@@ -167,7 +167,8 @@
     "nodes": 88757,
     "edges": 117953,
     "namedNodes": 2621
-   }
+   },
+   "note": "🔴 キーは 'hiroshima' ではなく 'hiroshima_city'。営業圏キーの正典（route_event_feed/area_keys.json）では 'hiroshima' は**広島地区＝呉・尾道・福山という別の交通圏**を指す。2026-08-13 に取り違えて公開し、その営業圏の運転手へ範囲違いのデータが配られる状態になっていたので直した。"
   },
   {
    "key": "kobe",
