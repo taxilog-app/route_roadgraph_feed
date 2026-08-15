@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13T14:51:42Z",
+ "generated": "2026-08-15T08:00:37Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -379,6 +379,147 @@
     "namedNodes": 5546
    },
    "note": "⚠️ 現在いちばん大きい営業圏（配布65.6MB）。四角で切ると東京23区がまるごと入るため。アプリの受け取り上限96MB・GitHubの1ファイル上限100MBの内側。"
+  },
+  {
+   "key": "niigata_a",
+   "label": "新潟（旧新潟県Ａ地区）地区（北陸信越）",
+   "bbox": [
+    37.67,
+    138.78,
+    38.04,
+    139.32
+   ],
+   "prefs": [
+    "15"
+   ],
+   "dataMonth": "2026-08",
+   "file": "niigata_a/road_graph.sqlite.gz",
+   "bytes": 8624431,
+   "bytesRaw": 24997888,
+   "sha256": "9a06ddfed86d73160558f1e2e804686ee50c2d2031043f39f104f9a0183a1483",
+   "counts": {
+    "nodes": 84494,
+    "edges": 115921,
+    "namedNodes": 404
+   },
+   "note": "⚠️ 交差点名404件はOSM側の登録が405件のみ（99.8%拾えている＝取りこぼしではない）。"
+  },
+  {
+   "key": "okayama",
+   "label": "岡山地区（中国）",
+   "bbox": [
+    34.29,
+    133.26,
+    35.36,
+    134.42
+   ],
+   "prefs": [
+    "33"
+   ],
+   "dataMonth": "2026-08",
+   "file": "okayama/road_graph.sqlite.gz",
+   "bytes": 39688173,
+   "bytesRaw": 118988800,
+   "sha256": "ff745481bc5555587802a9fb7c50cdb4c497e316ef0dff24458c552b4ad2ff44",
+   "counts": {
+    "nodes": 340771,
+    "edges": 438582,
+    "namedNodes": 1636
+   }
+  },
+  {
+   "key": "kumamoto",
+   "label": "熊本地区（九州）",
+   "bbox": [
+    32.09,
+    129.94,
+    33.2,
+    131.33
+   ],
+   "prefs": [
+    "43"
+   ],
+   "dataMonth": "2026-08",
+   "file": "kumamoto/road_graph.sqlite.gz",
+   "bytes": 40804815,
+   "bytesRaw": 123961344,
+   "sha256": "c23ddb0d6786b2b534d08b13c73eaf9f9f2f969d7d41e235bb7aa5b5eb4a7242",
+   "counts": {
+    "nodes": 323432,
+    "edges": 409243,
+    "namedNodes": 570
+   },
+   "note": "⚠️ 交差点名570件はOSM側の登録が575件のみ（99.1%拾えている＝取りこぼしではない）。"
+  },
+  {
+   "key": "hyogo",
+   "label": "兵庫地区（近畿）",
+   "bbox": [
+    34.15,
+    134.25,
+    35.68,
+    135.41
+   ],
+   "prefs": [
+    "28"
+   ],
+   "dataMonth": "2026-08",
+   "file": "hyogo/road_graph.sqlite.gz",
+   "bytes": 51270432,
+   "bytesRaw": 153624576,
+   "sha256": "5573fbf1af6485c900c16e93d1f93eb97a36facbfcb16edd51c7cd1bb2f7635a",
+   "counts": {
+    "nodes": 470676,
+    "edges": 626008,
+    "namedNodes": 4395
+   }
+  },
+  {
+   "key": "shizuoka",
+   "label": "静岡地区（中部）",
+   "bbox": [
+    34.57,
+    137.47,
+    35.65,
+    139.18
+   ],
+   "prefs": [
+    "22"
+   ],
+   "dataMonth": "2026-08",
+   "file": "shizuoka/road_graph.sqlite.gz",
+   "bytes": 54774419,
+   "bytesRaw": 164564992,
+   "sha256": "04dd6f523eee04e2d8f8c19c349e034eedb659c819d5c18e23058decfc4e2e13",
+   "counts": {
+    "nodes": 479646,
+    "edges": 631597,
+    "namedNodes": 3730
+   }
+  },
+  {
+   "key": "owari_mikawa",
+   "label": "尾張・三河地区（中部）",
+   "bbox": [
+    34.57,
+    136.67,
+    35.43,
+    137.84
+   ],
+   "prefs": [
+    "23"
+   ],
+   "dataMonth": "2026-08",
+   "file": "owari_mikawa/road_graph.sqlite.gz",
+   "bytes": 74591897,
+   "bytesRaw": 225239040,
+   "sha256": "d11a0fb2ee36da0a3223cccd0414bbecd961dbdbb585d329922ee8f074024536",
+   "counts": {
+    "nodes": 743278,
+    "edges": 1039890,
+    "namedNodes": 7224
+   },
+   "note": "⚠️ 現在いちばん大きい営業圏（配布71.1MB・アプリの受け取り上限96MBの74%）。四角の真ん中に名古屋市がまるごと入るため。尾張・三河の運転手は名古屋市内へ日常的に入るので、この重なりは無駄ではない（軌跡が道に乗る）。"
   }
  ]
 }
