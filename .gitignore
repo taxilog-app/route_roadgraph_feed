@@ -1,0 +1,10 @@
+# 🔴 道路グラフの実物は git に入れない（2026-08-15〜）。
+#    GitHub Pages は**公開サイト全体で1GBまで**で、45営業圏＝1.10GB で入らない。
+#    実物は「リリース添付ファイル」で配る（1ファイル2GiBまで・総量も通信量も無制限）。
+#    このリポジトリが持つのは目次(index.json)・README・道具だけ。
+#
+#    並べる    … python3 tools/stage_release_assets.py
+#    添付する  … 🔴社長が gh release create（PCの外へ出す作業）
+#    目次を向ける… python3 tools/switch_index_to_release.py data-YYYY-MM
+_assets/
+*/road_graph.sqlite.gz

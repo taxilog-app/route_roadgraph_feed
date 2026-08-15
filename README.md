@@ -17,9 +17,31 @@
 ## 中身
 
 ```
-index.json              … 目次（形の版数・営業圏ごとのファイル・指紋・件数）
-<営業圏キー>/road_graph.sqlite.gz
+index.json  … 目次（形の版数・営業圏ごとのURL・指紋・件数）
 ```
+
+🔴 **実物（road_graph.sqlite.gz）はこのリポジトリには入っていません。**
+GitHub の「**リリース添付ファイル**」で配っています（目次の `file` が絶対URL）。
+
+| | Pages（この置き場） | リリース添付 |
+|---|---|---|
+| 大きさの上限 | **サイト全体で1GB** | 1ファイル2GiB・**総量は無制限** |
+| 通信量 | 月100GB（ソフト上限） | **無制限** |
+
+2026-08-15 に引っ越しました。45営業圏で 1.10GB となり Pages の1GBを超えたためです。
+超えると「大きいファイルだけ弾かれる」のではなく**サイトごと公開が止まる**＝
+今届いている営業圏もまとめて届かなくなります。
+
+**作業の順番（この順を守れば、運転手に届かない時間が生まれません）**
+```
+python3 tools/stage_release_assets.py             # ① 平らな名前で並べる（_assets/）
+python3 tools/stage_release_assets.py --print-cmd # ② 🔴社長が gh release create で添付
+python3 tools/switch_index_to_release.py data-YYYY-MM   # ③ 目次を添付URLへ向ける（添付が全部在るか確かめてから書き換わる）
+python3 tools/verify_index.py --remote            # ④ 本物のURLから落として検査
+                                                  # ⑤ 🔴社長が push
+```
+⚠️ アプリは **v1.11.0 以降**が絶対URLに対応（`sqlite_feed_updater.dart`）。
+古いアプリは新しい営業圏を落とせない（＝同梱データのまま静かに動く）。
 
 - **gzipのまま配ります**（福岡で 22.7MB → 7.7MB）。端末側で展開します。
 - `sha256` は**配られたまま（圧縮された状態）**の指紋です。端末は展開の前に照合します。

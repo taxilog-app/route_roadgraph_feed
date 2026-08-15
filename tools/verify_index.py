@@ -139,6 +139,21 @@ def counts_ng(exp, want):
 
 
 def fetch(path, remote):
+    """目次の file を取ってくる。
+
+    🔴 file は「相対」と「絶対URL」の両方がありうる（2026-08-15〜）。
+       実物は GitHub Pages（**公開サイト全体で1GB**が上限）からリリース添付へ
+       移した。移した営業圏は https://github.com/.../releases/download/... になる。
+       手元で検査するときは、添付に出す前の実物 _assets/<名前> を見る
+       （tools/stage_release_assets.py が並べる場所）。
+    """
+    if path.startswith("http"):
+        if remote:
+            with urllib.request.urlopen(path, timeout=300) as r:
+                return r.read()
+        name = path.rsplit("/", 1)[-1]
+        with open(os.path.join(HERE, "_assets", name), "rb") as f:
+            return f.read()
     if remote:
         with urllib.request.urlopen(f"{BASE_URL}/{path}", timeout=120) as r:
             return r.read()

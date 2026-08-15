@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-15T09:27:22Z",
+ "generated": "2026-08-15T09:44:18Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -20,7 +20,7 @@
     "40"
    ],
    "dataMonth": "2026-08",
-   "file": "fukuoka/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/fukuoka_road_graph.sqlite.gz",
    "bytes": 7536384,
    "bytesRaw": 22327296,
    "sha256": "1a9de99db4c697837dd232b8e0a94ffd9bb25d4ebe403aee5eb5b78f24e19f68",
@@ -43,7 +43,7 @@
     "13"
    ],
    "dataMonth": "2026-08",
-   "file": "tokyo/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/tokyo_road_graph.sqlite.gz",
    "bytes": 38962835,
    "bytesRaw": 116117504,
    "sha256": "03508f32daca2294236598646f4e8863759d3d4d9fd99ec432723d364a959f70",
@@ -66,7 +66,7 @@
     "27"
    ],
    "dataMonth": "2026-08",
-   "file": "osaka/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/osaka_road_graph.sqlite.gz",
    "bytes": 27880545,
    "bytesRaw": 83566592,
    "sha256": "c5fe442ccbefc86ff19cc85d501a7af9f468b86d119e6083219a9de8d2996cfa",
@@ -89,7 +89,7 @@
     "23"
    ],
    "dataMonth": "2026-08",
-   "file": "nagoya/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/nagoya_road_graph.sqlite.gz",
    "bytes": 32816952,
    "bytesRaw": 99266560,
    "sha256": "fb0df9b6c47cb73a2847ade2015874aab10e840ab10d3ca87eca22725c153685",
@@ -112,7 +112,7 @@
     "14"
    ],
    "dataMonth": "2026-08",
-   "file": "keihin/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/keihin_road_graph.sqlite.gz",
    "bytes": 32207024,
    "bytesRaw": 94322688,
    "sha256": "5c90d65bb2cb2a514d424b2bfe4e9754005f7d12833905fdd8c2e35d222bfac1",
@@ -135,7 +135,7 @@
     "01"
    ],
    "dataMonth": "2026-08",
-   "file": "sapporo/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/sapporo_road_graph.sqlite.gz",
    "bytes": 12245424,
    "bytesRaw": 38260736,
    "sha256": "16b9860031d2197e8581f90a8b5cc6fa2e9112f94268e933ac63f76c8b8e9fc1",
@@ -159,7 +159,7 @@
     "34"
    ],
    "dataMonth": "2026-08",
-   "file": "hiroshima_city/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/hiroshima_city_road_graph.sqlite.gz",
    "bytes": 10301704,
    "bytesRaw": 30625792,
    "sha256": "e84df79ddcaec50d4c091f74a47e140b0d8230213f39ba9483c50a2e97b655a1",
@@ -183,7 +183,7 @@
     "28"
    ],
    "dataMonth": "2026-08",
-   "file": "kobe/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kobe_road_graph.sqlite.gz",
    "bytes": 22590333,
    "bytesRaw": 67981312,
    "sha256": "925e52c9fccf09cd885806a829214548e0ce9b95ef9efec29205789f1706cdb4",
@@ -206,7 +206,7 @@
     "26"
    ],
    "dataMonth": "2026-08",
-   "file": "kyoto/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kyoto_road_graph.sqlite.gz",
    "bytes": 27578998,
    "bytesRaw": 82341888,
    "sha256": "596f4bb7ce6436488b5589db2a175a5d1734c99c14f57c4f9e4975971044debd",
@@ -229,7 +229,7 @@
     "04"
    ],
    "dataMonth": "2026-08",
-   "file": "sendai/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/sendai_road_graph.sqlite.gz",
    "bytes": 8827935,
    "bytesRaw": 26226688,
    "sha256": "fbdd18af60c969e5f3fe4e944ca5e6d27520116ddccf44cec8e591b98806aa9b",
@@ -253,7 +253,7 @@
     "40"
    ],
    "dataMonth": "2026-08",
-   "file": "kitakyushu/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kitakyushu_road_graph.sqlite.gz",
    "bytes": 9911156,
    "bytesRaw": 29106176,
    "sha256": "bca312aada5fe0a1281a15a867acf6449bd435eccfa7fb79d820be12fe23d32b",
@@ -276,7 +276,7 @@
     "13"
    ],
    "dataMonth": "2026-08",
-   "file": "tama/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/tama_road_graph.sqlite.gz",
    "bytes": 36729344,
    "bytesRaw": 108511232,
    "sha256": "2f69bda76e27577ae4ffb7323a37634eff8f4d9101367ce1c2e1ce8a25fe70f8",
@@ -299,7 +299,7 @@
     "14"
    ],
    "dataMonth": "2026-08",
-   "file": "sagami/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/sagami_road_graph.sqlite.gz",
    "bytes": 43222632,
    "bytesRaw": 127094784,
    "sha256": "1da6076a44ac730434b4154b4e69c84f91fd7678999c8973a05e755ea1b217a4",
@@ -322,7 +322,7 @@
     "11"
    ],
    "dataMonth": "2026-08",
-   "file": "saitama/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/saitama_road_graph.sqlite.gz",
    "bytes": 56033953,
    "bytesRaw": 168415232,
    "sha256": "7d0cce0833d3e7efbc1eaf84ff553a120f9b516c80c44f06f9076dc5e310ccf4",
@@ -345,7 +345,7 @@
     "47"
    ],
    "dataMonth": "2026-08",
-   "file": "okinawa_main/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/okinawa_main_road_graph.sqlite.gz",
    "bytes": 10646365,
    "bytesRaw": 31150080,
    "sha256": "96f31cd6165a1e738e21ac9d9b51957e1b1b4ad3404abea640a9c04720e2fd18",
@@ -369,7 +369,7 @@
     "12"
    ],
    "dataMonth": "2026-08",
-   "file": "chiba/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/chiba_road_graph.sqlite.gz",
    "bytes": 68784996,
    "bytesRaw": 204300288,
    "sha256": "a46ab978232f86a9bbfb562b43d316962c0cb251bbb71b95f9011b75a77fb1b5",
@@ -393,7 +393,7 @@
     "15"
    ],
    "dataMonth": "2026-08",
-   "file": "niigata_a/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/niigata_a_road_graph.sqlite.gz",
    "bytes": 8624431,
    "bytesRaw": 24997888,
    "sha256": "9a06ddfed86d73160558f1e2e804686ee50c2d2031043f39f104f9a0183a1483",
@@ -417,7 +417,7 @@
     "33"
    ],
    "dataMonth": "2026-08",
-   "file": "okayama/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/okayama_road_graph.sqlite.gz",
    "bytes": 39688173,
    "bytesRaw": 118988800,
    "sha256": "ff745481bc5555587802a9fb7c50cdb4c497e316ef0dff24458c552b4ad2ff44",
@@ -440,7 +440,7 @@
     "43"
    ],
    "dataMonth": "2026-08",
-   "file": "kumamoto/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kumamoto_road_graph.sqlite.gz",
    "bytes": 40804815,
    "bytesRaw": 123961344,
    "sha256": "c23ddb0d6786b2b534d08b13c73eaf9f9f2f969d7d41e235bb7aa5b5eb4a7242",
@@ -464,7 +464,7 @@
     "28"
    ],
    "dataMonth": "2026-08",
-   "file": "hyogo/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/hyogo_road_graph.sqlite.gz",
    "bytes": 51270432,
    "bytesRaw": 153624576,
    "sha256": "5573fbf1af6485c900c16e93d1f93eb97a36facbfcb16edd51c7cd1bb2f7635a",
@@ -487,7 +487,7 @@
     "22"
    ],
    "dataMonth": "2026-08",
-   "file": "shizuoka/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/shizuoka_road_graph.sqlite.gz",
    "bytes": 54774419,
    "bytesRaw": 164564992,
    "sha256": "04dd6f523eee04e2d8f8c19c349e034eedb659c819d5c18e23058decfc4e2e13",
@@ -510,7 +510,7 @@
     "23"
    ],
    "dataMonth": "2026-08",
-   "file": "owari_mikawa/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/owari_mikawa_road_graph.sqlite.gz",
    "bytes": 74591897,
    "bytesRaw": 225239040,
    "sha256": "d11a0fb2ee36da0a3223cccd0414bbecd961dbdbb585d329922ee8f074024536",
@@ -534,7 +534,7 @@
     "37"
    ],
    "dataMonth": "2026-08",
-   "file": "shodoshima/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/shodoshima_road_graph.sqlite.gz",
    "bytes": 872473,
    "bytesRaw": 2686976,
    "sha256": "5633186210f4f98e102375b204b10c4d228decb700efb60e671949458b117d67",
@@ -558,7 +558,7 @@
     "39"
    ],
    "dataMonth": "2026-08",
-   "file": "kochi_city/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kochi_city_road_graph.sqlite.gz",
    "bytes": 5534476,
    "bytesRaw": 16863232,
    "sha256": "72ba7137134562ebb151706eab962b4a3468f1e094f175e09fc82442eb94e601",
@@ -582,7 +582,7 @@
     "37"
    ],
    "dataMonth": "2026-08",
-   "file": "kagawa/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kagawa_road_graph.sqlite.gz",
    "bytes": 15685790,
    "bytesRaw": 46587904,
    "sha256": "e67a0a0436d9cf27d041a243f68b8785ba89c6fd9d9e552421a0b4843f65960e",
@@ -606,7 +606,7 @@
     "36"
    ],
    "dataMonth": "2026-08",
-   "file": "tokushima_city/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/tokushima_city_road_graph.sqlite.gz",
    "bytes": 11342629,
    "bytesRaw": 34091008,
    "sha256": "fd563037e024b82df8a287e729edbe3d9cb85025a89340a37a5403b56ac5c486",
@@ -630,7 +630,7 @@
     "36"
    ],
    "dataMonth": "2026-08",
-   "file": "tokushima_gun/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/tokushima_gun_road_graph.sqlite.gz",
    "bytes": 14974579,
    "bytesRaw": 45449216,
    "sha256": "0b3eaff392164e02c1903310dafe69fd5451dd3833db2128937a1bd20219c455",
@@ -654,7 +654,7 @@
     "39"
    ],
    "dataMonth": "2026-08",
-   "file": "kochi_gun/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kochi_gun_road_graph.sqlite.gz",
    "bytes": 27077893,
    "bytesRaw": 84025344,
    "sha256": "8e227a452efa02ffb6d4b166857881899a8a77f81258ab0d1aec6dc19fb64fd6",
@@ -678,7 +678,7 @@
     "38"
    ],
    "dataMonth": "2026-08",
-   "file": "ehime/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/ehime_road_graph.sqlite.gz",
    "bytes": 39320746,
    "bytesRaw": 121163776,
    "sha256": "09f2ac4c56f02acd217201dbf78b68b851a8b6b2a9363f52b3f9b107cb797737",
@@ -702,7 +702,7 @@
     "14"
    ],
    "dataMonth": "2026-08",
-   "file": "odawara/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/odawara_road_graph.sqlite.gz",
    "bytes": 5234732,
    "bytesRaw": 15237120,
    "sha256": "6ebb26086e039da754dee7cd84b508ecc2f31a2de7d4c0e85c8e96e975212b3c",
@@ -725,7 +725,7 @@
     "19"
    ],
    "dataMonth": "2026-08",
-   "file": "yamanashi_a/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/yamanashi_a_road_graph.sqlite.gz",
    "bytes": 10559240,
    "bytesRaw": 30851072,
    "sha256": "34f60ff4f6bfa1b1ed496c9cc8075259385b6f436dd3cdf94b385a5930e157a5",
@@ -748,7 +748,7 @@
     "19"
    ],
    "dataMonth": "2026-08",
-   "file": "yamanashi_b/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/yamanashi_b_road_graph.sqlite.gz",
    "bytes": 18645037,
    "bytesRaw": 55222272,
    "sha256": "4d81292bbf0188811fe2c0587f6be16c9f1e025dc9377b966aa707282c1be683",
@@ -771,7 +771,7 @@
     "10"
    ],
    "dataMonth": "2026-08",
-   "file": "gunma_b/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/gunma_b_road_graph.sqlite.gz",
    "bytes": 11873679,
    "bytesRaw": 35344384,
    "sha256": "234ab3c14ba1f225c4a7f72a66e0301c969b428facb7be29dac91b1921972ba9",
@@ -794,7 +794,7 @@
     "11"
    ],
    "dataMonth": "2026-08",
-   "file": "saitama_n/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/saitama_n_road_graph.sqlite.gz",
    "bytes": 38798460,
    "bytesRaw": 116088832,
    "sha256": "3d6b6a4c26657d496b47e053afb55a3fc03ea19859a9b6e3f4467e1d861714bf",
@@ -817,7 +817,7 @@
     "09"
    ],
    "dataMonth": "2026-08",
-   "file": "tochigi/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/tochigi_road_graph.sqlite.gz",
    "bytes": 32320183,
    "bytesRaw": 95485952,
    "sha256": "66bf073d75f920fec3e5151dfb59a331d532022997afa2a25ee86fdd3a6a2f87",
@@ -840,7 +840,7 @@
     "10"
    ],
    "dataMonth": "2026-08",
-   "file": "gunma_a/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/gunma_a_road_graph.sqlite.gz",
    "bytes": 43873881,
    "bytesRaw": 131284992,
    "sha256": "48904e6c567d6cb0996d6b7050b36c09e1273942958a740df5215284ad346645",
@@ -863,7 +863,7 @@
     "08"
    ],
    "dataMonth": "2026-08",
-   "file": "ibaraki/road_graph.sqlite.gz",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/ibaraki_road_graph.sqlite.gz",
    "bytes": 78273556,
    "bytesRaw": 233631744,
    "sha256": "3d045f2b86097140d879ba963cd9da3b65128d240727886fa2b477f494b008b3",
@@ -873,6 +873,198 @@
     "namedNodes": 4719
    },
    "note": "⚠️ 現在いちばん大きい営業圏（配布74.6MB・アプリの受け取り上限96MBの78%）。四角に東京東部と千葉北部が入るため。"
+  },
+  {
+   "key": "hakodate_a",
+   "label": "函館Ａ地区（北海道）",
+   "bbox": [
+    41.7,
+    140.42,
+    42.07,
+    141.19
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/hakodate_a_road_graph.sqlite.gz",
+   "bytes": 3080706,
+   "bytesRaw": 9211904,
+   "sha256": "2e0b973c462c8fe18ca6a8c21a1bc904230c1bf971d10ecd41d2bfdf7d111b71",
+   "counts": {
+    "nodes": 31093,
+    "edges": 40871,
+    "namedNodes": 202
+   },
+   "note": "⚠️ 交差点名は202件（OSM側の登録が202件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "hakodate_b",
+   "label": "函館Ｂ地区（北海道）",
+   "bbox": [
+    41.35,
+    139.33,
+    42.64,
+    141.19
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/hakodate_b_road_graph.sqlite.gz",
+   "bytes": 8510054,
+   "bytesRaw": 25206784,
+   "sha256": "c47cfcbc9dc2ed2004cdfa33a96eac47516b8e0972333aa7f2976cd2473fa865",
+   "counts": {
+    "nodes": 76197,
+    "edges": 97486,
+    "namedNodes": 214
+   },
+   "note": "⚠️ 交差点名は214件（OSM側の登録が214件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "obihiro",
+   "label": "帯広地区（北海道）",
+   "bbox": [
+    42.16,
+    142.67,
+    43.65,
+    144.04
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/obihiro_road_graph.sqlite.gz",
+   "bytes": 8983506,
+   "bytesRaw": 27680768,
+   "sha256": "1a66d2be34bd8375c748a1d2f92c066ecd236c8b3b36808bfa8127c8cc196b10",
+   "counts": {
+    "nodes": 70084,
+    "edges": 93636,
+    "namedNodes": 49
+   },
+   "note": "⚠️ 交差点名は49件（OSM側の登録が50件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "kitami",
+   "label": "北見地区（北海道）",
+   "bbox": [
+    43.46,
+    142.58,
+    44.69,
+    145.34
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kitami_road_graph.sqlite.gz",
+   "bytes": 8908034,
+   "bytesRaw": 27049984,
+   "sha256": "e61b9227c6a4a5ddc13a6b5ba0b7271a7cfaff36ac37d4ee8745050205cd33f4",
+   "counts": {
+    "nodes": 65387,
+    "edges": 85362,
+    "namedNodes": 2
+   },
+   "note": "⚠️ 交差点名は2件（OSM側の登録が2件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "kushiro",
+   "label": "釧路地区（北海道）",
+   "bbox": [
+    42.84,
+    143.7,
+    44.35,
+    145.82
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/kushiro_road_graph.sqlite.gz",
+   "bytes": 10631268,
+   "bytesRaw": 32825344,
+   "sha256": "8e20fefb488da5f5d73d883a1edc4db281538ef7db29eb183d194be94c536e99",
+   "counts": {
+    "nodes": 86004,
+    "edges": 113824,
+    "namedNodes": 13
+   },
+   "note": "⚠️ 交差点名は13件（OSM側の登録が17件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "muroran",
+   "label": "室蘭地区（北海道）",
+   "bbox": [
+    41.92,
+    140.53,
+    43.01,
+    143.33
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/muroran_road_graph.sqlite.gz",
+   "bytes": 17705604,
+   "bytesRaw": 54157312,
+   "sha256": "43a6a9902836fc09506ff214ed8f88aeb265da008a7ce052c54dacf4d68586a4",
+   "counts": {
+    "nodes": 162840,
+    "edges": 218216,
+    "namedNodes": 71
+   },
+   "note": "⚠️ 交差点名は71件（OSM側の登録が71件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "chitose",
+   "label": "千歳・空知・後志地区（北海道）",
+   "bbox": [
+    42.54,
+    139.82,
+    43.74,
+    142.37
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/chitose_road_graph.sqlite.gz",
+   "bytes": 23726640,
+   "bytesRaw": 73175040,
+   "sha256": "300d846b1a8ce5768de538f20b3a49e1500a57e88e25932103e709b641a056ec",
+   "counts": {
+    "nodes": 220375,
+    "edges": 307963,
+    "namedNodes": 87
+   },
+   "note": "⚠️ 交差点名は87件（OSM側の登録が89件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
+  },
+  {
+   "key": "asahikawa",
+   "label": "旭川地区（北海道）",
+   "bbox": [
+    42.88,
+    140.96,
+    45.53,
+    143.18
+   ],
+   "prefs": [
+    "01"
+   ],
+   "dataMonth": "2026-08",
+   "file": "https://github.com/taxilog-app/route_roadgraph_feed/releases/download/data-2026-08/asahikawa_road_graph.sqlite.gz",
+   "bytes": 30074852,
+   "bytesRaw": 93265920,
+   "sha256": "a0d7ce5e16ce0550c923a630afe46508ed1a42e1c4e6b048127d31f81fe6cb20",
+   "counts": {
+    "nodes": 271473,
+    "edges": 377518,
+    "namedNodes": 196
+   },
+   "note": "⚠️ 交差点名は196件（OSM側の登録が199件しか無い＝取りこぼしではない）。北海道は住所が碁盤の目式で交差点に固有名がつく文化が薄く、札幌64件・他も同様。道路スナップ・磁石・規制の向き判定は正常。"
   }
  ]
 }
