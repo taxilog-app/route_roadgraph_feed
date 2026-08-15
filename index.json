@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-15T08:33:15Z",
+ "generated": "2026-08-15T09:27:22Z",
  "dataMonth": "2026-08",
  "schema": 1,
  "format": "道路グラフ（交差点ノード＋道路エッジ・グリッド索引つき）",
@@ -688,6 +688,191 @@
     "namedNodes": 837
    },
    "note": "⚠️ 四国は交差点に固有名がつく文化が薄く、OSM側の登録自体が少ない（この営業圏は848件中837件＝99%を取り込み）。道路スナップ・磁石・規制の向き判定は他と同じように働く。"
+  },
+  {
+   "key": "odawara",
+   "label": "小田原地区（関東）",
+   "bbox": [
+    35.13,
+    138.91,
+    35.52,
+    139.24
+   ],
+   "prefs": [
+    "14"
+   ],
+   "dataMonth": "2026-08",
+   "file": "odawara/road_graph.sqlite.gz",
+   "bytes": 5234732,
+   "bytesRaw": 15237120,
+   "sha256": "6ebb26086e039da754dee7cd84b508ecc2f31a2de7d4c0e85c8e96e975212b3c",
+   "counts": {
+    "nodes": 47454,
+    "edges": 59404,
+    "namedNodes": 545
+   }
+  },
+  {
+   "key": "yamanashi_a",
+   "label": "山梨（旧山梨県Ａ地区）地区（関東）",
+   "bbox": [
+    35.46,
+    138.18,
+    35.98,
+    138.87
+   ],
+   "prefs": [
+    "19"
+   ],
+   "dataMonth": "2026-08",
+   "file": "yamanashi_a/road_graph.sqlite.gz",
+   "bytes": 10559240,
+   "bytesRaw": 30851072,
+   "sha256": "34f60ff4f6bfa1b1ed496c9cc8075259385b6f436dd3cdf94b385a5930e157a5",
+   "counts": {
+    "nodes": 88316,
+    "edges": 117636,
+    "namedNodes": 1016
+   }
+  },
+  {
+   "key": "yamanashi_b",
+   "label": "山梨（旧山梨県Ｂ地区）地区（関東）",
+   "bbox": [
+    35.16,
+    138.22,
+    35.86,
+    139.14
+   ],
+   "prefs": [
+    "19"
+   ],
+   "dataMonth": "2026-08",
+   "file": "yamanashi_b/road_graph.sqlite.gz",
+   "bytes": 18645037,
+   "bytesRaw": 55222272,
+   "sha256": "4d81292bbf0188811fe2c0587f6be16c9f1e025dc9377b966aa707282c1be683",
+   "counts": {
+    "nodes": 158302,
+    "edges": 204667,
+    "namedNodes": 1416
+   }
+  },
+  {
+   "key": "gunma_b",
+   "label": "群馬（旧群馬県Ｂ地区）地区（関東）",
+   "bbox": [
+    36.4,
+    138.39,
+    37.06,
+    139.41
+   ],
+   "prefs": [
+    "10"
+   ],
+   "dataMonth": "2026-08",
+   "file": "gunma_b/road_graph.sqlite.gz",
+   "bytes": 11873679,
+   "bytesRaw": 35344384,
+   "sha256": "234ab3c14ba1f225c4a7f72a66e0301c969b428facb7be29dac91b1921972ba9",
+   "counts": {
+    "nodes": 93207,
+    "edges": 120365,
+    "namedNodes": 563
+   }
+  },
+  {
+   "key": "saitama_n",
+   "label": "埼玉北部地区（関東）",
+   "bbox": [
+    35.83,
+    138.71,
+    36.29,
+    139.71
+   ],
+   "prefs": [
+    "11"
+   ],
+   "dataMonth": "2026-08",
+   "file": "saitama_n/road_graph.sqlite.gz",
+   "bytes": 38798460,
+   "bytesRaw": 116088832,
+   "sha256": "3d6b6a4c26657d496b47e053afb55a3fc03ea19859a9b6e3f4467e1d861714bf",
+   "counts": {
+    "nodes": 391056,
+    "edges": 527538,
+    "namedNodes": 3248
+   }
+  },
+  {
+   "key": "tochigi",
+   "label": "栃木地区（関東）",
+   "bbox": [
+    36.2,
+    139.32,
+    37.16,
+    140.3
+   ],
+   "prefs": [
+    "09"
+   ],
+   "dataMonth": "2026-08",
+   "file": "tochigi/road_graph.sqlite.gz",
+   "bytes": 32320183,
+   "bytesRaw": 95485952,
+   "sha256": "66bf073d75f920fec3e5151dfb59a331d532022997afa2a25ee86fdd3a6a2f87",
+   "counts": {
+    "nodes": 287772,
+    "edges": 389708,
+    "namedNodes": 1965
+   }
+  },
+  {
+   "key": "gunma_a",
+   "label": "群馬（旧群馬県Ａ地区）地区（関東）",
+   "bbox": [
+    35.98,
+    138.57,
+    36.64,
+    139.67
+   ],
+   "prefs": [
+    "10"
+   ],
+   "dataMonth": "2026-08",
+   "file": "gunma_a/road_graph.sqlite.gz",
+   "bytes": 43873881,
+   "bytesRaw": 131284992,
+   "sha256": "48904e6c567d6cb0996d6b7050b36c09e1273942958a740df5215284ad346645",
+   "counts": {
+    "nodes": 407767,
+    "edges": 555085,
+    "namedNodes": 3690
+   }
+  },
+  {
+   "key": "ibaraki",
+   "label": "茨城地区（関東）",
+   "bbox": [
+    35.73,
+    139.68,
+    36.95,
+    140.85
+   ],
+   "prefs": [
+    "08"
+   ],
+   "dataMonth": "2026-08",
+   "file": "ibaraki/road_graph.sqlite.gz",
+   "bytes": 78273556,
+   "bytesRaw": 233631744,
+   "sha256": "3d045f2b86097140d879ba963cd9da3b65128d240727886fa2b477f494b008b3",
+   "counts": {
+    "nodes": 758375,
+    "edges": 1024419,
+    "namedNodes": 4719
+   },
+   "note": "⚠️ 現在いちばん大きい営業圏（配布74.6MB・アプリの受け取り上限96MBの78%）。四角に東京東部と千葉北部が入るため。"
   }
  ]
 }
